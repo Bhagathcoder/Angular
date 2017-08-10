@@ -1,0 +1,11 @@
+
+
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" (submit)="login(username.value, password.value)">
+      <input type="text" #username (keypress)="change_class()" placeholder="username"/>
+      <input class="{{password_class}}" type="password" (keypress)="change_class()" #password  placeholder="password"/>
+      <button>login</button>
+    </form>
+  </div>
+</div>
