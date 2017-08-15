@@ -19,7 +19,7 @@ var headers = new Headers();
 headers.append('Content-Type','application/x-www-form-urlencoded; charset=UTF-8'); 
 headers.append('X-Requested-With','XMLHttpRequest');
 
-return this.http.post('/Spectrometer/login',body,{ headers: headers })
+return this.http.post('login',body,{ headers: headers })
   .map(res => {
     // If request fails, throw an Error that will be caught
     if(res.status < 200 || res.status >= 300) {
